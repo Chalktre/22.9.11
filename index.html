@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+
+    <script>
+        var d = document.querySelector('div')
+        console.log(location.search);
+        var uname = location.search;
+        var n = uname.substr(1).split('=')
+        console.log(n[1]);
+        d.innerHTML = 'Welcome,' + n[1];
+    </script>
+</body>
+</html>
